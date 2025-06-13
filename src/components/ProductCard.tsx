@@ -69,7 +69,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {/* Botón Sell.app */}
         <button
           data-sell-store={product.storeId}
-          data-sell-product={product.productId}
+          data-shoppy-product={product.productId}
           data-sell-theme=""
           data-sell-darkmode="true"
           className="w-full bg-gradient-to-r from-electric-blue-600 to-pastel-purple-600 text-white py-3 rounded-xl font-semibold hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-electric-blue-500/25 flex items-center justify-center group"
