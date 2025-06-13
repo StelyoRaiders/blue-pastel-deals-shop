@@ -8,7 +8,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-electric-blue-400 to-pastel-purple-400 rounded-lg"></div>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-electric-blue-400 to-pastel-purple-400 bg-clip-text text-transparent">
-              DigitalStore
+              GameFuel Store
             </h1>
           </div>
           
@@ -29,7 +29,7 @@ const Header = () => {
           
           <div>
             <a
-              href="/panel-cliente"
+              href="https://blackshop.sell.app/customer-portal"
               className="px-5 py-2 rounded-xl font-semibold bg-gradient-to-r from-electric-blue-600 to-pastel-purple-600 text-white hover:scale-105 transition-all duration-300 shadow hover:shadow-xl"
             >
               Panel de clientes
