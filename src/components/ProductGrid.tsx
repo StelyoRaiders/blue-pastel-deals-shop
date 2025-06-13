@@ -21,7 +21,7 @@ const products = [
     description: 'Acceso completo a Discord Nitro por 1 mes',
     features: ['Avatar animado', 'Boost de servidor', 'Calidad HD', 'Emojis personalizados'],
     storeId: '62796',    // PON aquí tu storeId real de Sell.app
-    productId: '307251', // PON aquí tu productId real de Sell.app
+    productId: '75fFwqM', // PON aquí tu productId real de Sell.app
   },
   {
     id: 2,
