@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { ShoppingCart, Search } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -29,16 +27,13 @@ const Header = () => {
             </a>
           </nav>
           
-          <div className="flex items-center space-x-4">
-            <button className="p-2 rounded-lg glass-card hover-glow">
-              <Search size={20} className="text-electric-blue-400" />
-            </button>
-            <button className="p-2 rounded-lg glass-card hover-glow relative">
-              <ShoppingCart size={20} className="text-electric-blue-400" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-r from-electric-blue-500 to-pastel-purple-500 rounded-full text-xs flex items-center justify-center">
-                0
-              </span>
-            </button>
+          <div>
+            <a
+              href="/panel-cliente"
+              className="px-5 py-2 rounded-xl font-semibold bg-gradient-to-r from-electric-blue-600 to-pastel-purple-600 text-white hover:scale-105 transition-all duration-300 shadow hover:shadow-xl"
+            >
+              Panel de clientes
+            </a>
           </div>
         </div>
       </div>
