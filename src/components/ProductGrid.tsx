@@ -19,7 +19,9 @@ const products = [
     category: 'discord',
     image: '💜',
     description: 'Acceso completo a Discord Nitro por 1 mes',
-    features: ['Avatar animado', 'Boost de servidor', 'Calidad HD', 'Emojis personalizados']
+    features: ['Avatar animado', 'Boost de servidor', 'Calidad HD', 'Emojis personalizados'],
+    storeId: '62796',    // PON aquí tu storeId real de Sell.app
+    productId: '307251', // PON aquí tu productId real de Sell.app
   },
   {
     id: 2,
@@ -29,7 +31,9 @@ const products = [
     category: 'streaming',
     image: '🎬',
     description: 'Cuenta Netflix Premium compartida',
-    features: ['4K Ultra HD', '4 pantallas', 'Sin anuncios', 'Descarga offline']
+    features: ['4K Ultra HD', '4 pantallas', 'Sin anuncios', 'Descarga offline'],
+    storeId: '62796',
+    productId: '307252',
   },
   {
     id: 3,
@@ -39,7 +43,9 @@ const products = [
     category: 'discord',
     image: '💎',
     description: 'Discord Nitro por 3 meses completos',
-    features: ['Avatar animado', 'Boost de servidor', 'Calidad HD', 'Emojis personalizados']
+    features: ['Avatar animado', 'Boost de servidor', 'Calidad HD', 'Emojis personalizados'],
+    storeId: '62796',
+    productId: '307253',
   },
   {
     id: 4,
@@ -49,7 +55,9 @@ const products = [
     category: 'streaming',
     image: '🎵',
     description: 'Música sin límites y sin anuncios',
-    features: ['Sin anuncios', 'Descarga offline', 'Calidad alta', 'Saltos ilimitados']
+    features: ['Sin anuncios', 'Descarga offline', 'Calidad alta', 'Saltos ilimitados'],
+    storeId: '62796',
+    productId: '307254',
   },
   {
     id: 5,
@@ -59,7 +67,9 @@ const products = [
     category: 'gaming',
     image: '🎮',
     description: 'Crédito para tu cuenta de Steam',
-    features: ['Válido globalmente', 'Entrega instantánea', 'Sin expiración', 'Activación automática']
+    features: ['Válido globalmente', 'Entrega instantánea', 'Sin expiración', 'Activación automática'],
+    storeId: '62796',
+    productId: '307255',
   },
   {
     id: 6,
@@ -69,9 +79,12 @@ const products = [
     category: 'software',
     image: '📊',
     description: 'Suite completa de Office por 1 año',
-    features: ['Word, Excel, PowerPoint', '1TB OneDrive', 'Soporte técnico', 'Actualizaciones']
+    features: ['Word, Excel, PowerPoint', '1TB OneDrive', 'Soporte técnico', 'Actualizaciones'],
+    storeId: '62796',
+    productId: '307256',
   }
 ];
+
 
 const ProductGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
