@@ -22,8 +22,12 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 glass-card border-b border-white/10">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-electric-blue-400 to-pastel-purple-400 rounded-lg"></div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/96380c5a-321d-41c9-a8f7-caf4993ab7bd.png" 
+              alt="GameFuel Store Logo" 
+              className="w-10 h-10 rounded-lg"
+            />
             <h1 className="text-2xl font-bold bg-gradient-to-r from-electric-blue-400 to-pastel-purple-400 bg-clip-text text-transparent">
               GameFuel Store
             </h1>
