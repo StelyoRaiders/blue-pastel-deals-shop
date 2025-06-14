@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-electric-blue-400 to-pastel-purple-400 rounded-lg"></div>
               <h3 className="text-xl font-bold bg-gradient-to-r from-electric-blue-400 to-pastel-purple-400 bg-clip-text text-transparent">
-                DigitalStore
+                GameFuel Store
               </h3>
             </div>
             <p className="text-foreground/70 mb-4">
@@ -44,8 +45,16 @@ const Footer = () => {
             <ul className="space-y-2 text-foreground/70">
               <li><a href="#" className="hover:text-electric-blue-400 transition-colors">Centro de Ayuda</a></li>
               <li><a href="#" className="hover:text-electric-blue-400 transition-colors">Contacto</a></li>
-              <li><a href="#" className="hover:text-electric-blue-400 transition-colors">Términos de Uso</a></li>
-              <li><a href="#" className="hover:text-electric-blue-400 transition-colors">Privacidad</a></li>
+              <li>
+                <Link to="/terms" className="hover:text-electric-blue-400 transition-colors">
+                  Términos de Uso
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="hover:text-electric-blue-400 transition-colors">
+                  Privacidad
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -70,7 +79,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-foreground/50">
-            © 2024 DigitalStore. Todos los derechos reservados. Productos digitales de calidad premium.
+            © 2024 GameFuel Store. Todos los derechos reservados. Productos digitales de calidad premium.
           </p>
         </div>
       </div>
