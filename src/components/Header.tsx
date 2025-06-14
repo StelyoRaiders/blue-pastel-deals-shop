@@ -52,12 +52,14 @@ const Header = () => {
             >
               Categorías
             </button>
-            <button 
-              onClick={() => scrollToSection('contacto')}
-              className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300 cursor-pointer"
+            <a 
+              href="https://discord.gg/tu-servidor-discord"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300"
             >
-              Contacto
-            </button>
+              Discord
+            </a>
           </nav>
           
           <div>
