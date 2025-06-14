@@ -1,30 +1,59 @@
+
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  const scrollToSection = (sectionId: string) => {
+    if (isHomePage) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Si no estamos en la página principal, navegamos allí primero
+      window.location.href = `/#${sectionId}`;
+    }
+  };
+
   return (
     <header className="fixed top-0 w-full z-50 glass-card border-b border-white/10">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-electric-blue-400 to-pastel-purple-400 rounded-lg"></div>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-electric-blue-400 to-pastel-purple-400 bg-clip-text text-transparent">
               GameFuel Store
             </h1>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300">
+            <button 
+              onClick={() => scrollToSection('inicio')}
+              className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300 cursor-pointer"
+            >
               Inicio
-            </a>
-            <a href="#productos" className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300">
+            </button>
+            <button 
+              onClick={() => scrollToSection('productos')}
+              className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300 cursor-pointer"
+            >
               Productos
-            </a>
-            <a href="#categorias" className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300">
+            </button>
+            <button 
+              onClick={() => scrollToSection('categorias')}
+              className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300 cursor-pointer"
+            >
               Categorías
-            </a>
-            <a href="#contacto" className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300">
+            </button>
+            <button 
+              onClick={() => scrollToSection('contacto')}
+              className="text-foreground/80 hover:text-electric-blue-400 transition-colors duration-300 cursor-pointer"
+            >
               Contacto
-            </a>
+            </button>
           </nav>
           
           <div>
